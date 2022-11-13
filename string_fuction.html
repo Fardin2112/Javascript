@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string function</title>
+</head>
+<body>
+    <div class="conatiner">
+        <h1>today we learn about the string function</h1>
+    </div>
+
+   
+    <script>
+        var str='This is a string';
+        console.log(str);
+        //first occurence of substring
+        var position= str.indexOf('is');
+        console.log(position);
+        //last occurence of substring
+        position= str.lastIndexOf('is');
+        console.log(position);
+
+        //substring from string
+        // var substr=str.slice(0,6);
+        //this method not take negative number
+        // var substr=str.substring(1,6);
+        var substr1=str.substr(1,6);
+        console.log(substr1);
+
+        //for change any string in different string
+        var replaced=str.replace('string','Fardin');
+        console.log(str);
+        console.log(replaced);
+
+        //for upper and lower case
+        console.log(str.toUpperCase());
+        console.log(str.toLowerCase());
+         
+        //adding more string in another string
+        var newstring=str.concat('if you know you know');
+        console.log(newstring);
+
+        //for remove space in before and after of string
+        // here we use trim function
+        var strwithwhitespace='   do  you know   this     man   ';
+        console.log(strwithwhitespace);
+        console.log(strwithwhitespace.trim());
+
+        //for know index data
+        var char1=str.charAt(2);
+        console.log(char1);
+        //not imp for finding code of char
+        var char1=str.charCodeAt(2);
+        console.log(char1);
+
+        console.log(str[3]);
+
+    </script>
+    
+</body>
+</html>

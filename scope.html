@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scope and Conditon</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>item-1</li>
+            <li>item-2</li>
+            <li>item-3</li>
+            <li>item-4</li>
+        </ul>
+    </div>
+ 
+    <script>
+        let age=18;
+        if(age>=18){
+            console.log('You can drink water');
+        }
+        else{
+            console.log("you can't drink water");
+        }
+        // here const as also use for define inetegr but you can't change this value futher.
+        const pen=1;
+        switch (pen) {
+                case 2:
+                console.log('Pen is less than required.');
+                break;
+                case 3:
+                console.log('Pen is less than required.');
+                break;
+                case 5:
+                console.log('Yup You can enter.');
+                break;
+        
+            default:
+                console.log('you can not enter.');
+                break;
+        }
+    </script>
+    
+</body>
+</html>
